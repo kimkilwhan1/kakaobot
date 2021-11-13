@@ -23,7 +23,13 @@ function response(room, msg, sender, isGroupChat, replier, imageDB, packageName)
 
 
     if (isMatch(msg, "오늘급식")){
-        LunchParse(today.getFullYear(), today.getMonth());
+        let m="[급식]";
+        let parse=LunchParse(today.getFullYear(), today.getMonth());
+
+        for(var e in parse){
+            if(e!=0)m+="\n"+parse[e];
+        }
+        replier.reply(m);
     }
 
 
