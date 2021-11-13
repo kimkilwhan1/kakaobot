@@ -1,13 +1,3 @@
-
-/**
- * (string) room
- * (string) sender
- * (boolean) isGroupChat
- * (void) replier.reply(message)
- * (boolean) replier.reply(room, message, hideErrorToast = false) 
- * (string) imageDB.getProfileBase64()
- * (string) packageName
- */
 const ub2db = (str) => (str == undefined ? 0 : str);
 const isMatch = (msg, str) => (msg.indexOf(str) != -1);
 
