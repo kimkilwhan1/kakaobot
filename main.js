@@ -1,8 +1,10 @@
-const ub2db = function (str){
-    return (str == undefined ? 0 : str);}
+function ub2db(str){
+    return (str == undefined ? 0 : str);
+}
     
-const isMatch = function (msg, str) { 
-    return (msg.indexOf(str) != -1);}
+function isMatch(msg, str) { 
+    return (msg.indexOf(str) != -1);
+}
 
 function response(room, msg, sender, isGroupChat, replier, imageDB, packageName) {
     var today = new Date();
